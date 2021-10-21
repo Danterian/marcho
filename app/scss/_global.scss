@@ -1,54 +1,30 @@
-html {
-    box-sizing: border-box;
+html,
+body {
+    height: 100%;
 }
 
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
+body {
+    color: $default;
+    font-size: 16px;
+    line-height: 26px;
+    @extend %quicksand-500;
+    display: flex;
+    flex-direction: column;
 }
 
-ul[class],
-ol[class] {
-    padding: 0;
+.main {
+    flex-grow: 1;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-    margin: 0;
-}
-
-ul[class]{
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 a {
-    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    color: $default;
+    @extend %quicksand-500;
 }
-
